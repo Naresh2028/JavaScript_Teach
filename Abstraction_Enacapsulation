@@ -1,0 +1,14 @@
+class Car{
+    canStart(){
+        return "car started!"
+    }
+
+    canStop(){
+        return "Car stopped!"
+    }
+}
+
+cabDriver = new Car();
+
+console.log(cabDriver.canStart());
+console.log(cabDriver.canStop());
