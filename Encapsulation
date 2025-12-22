@@ -1,0 +1,51 @@
+class NewBank {
+
+  #balance = 0;
+
+  constructor(value) {
+    this.#balance = value;
+  }
+
+  withdraw(value) {
+    if (value > 0 && value < this.#balance) {
+      this.#balance -= value;
+      console.log(`Withdrawl successfull, Amount ${value}`);
+
+    }
+    else {
+      console.log("Please enter valid number da...");
+    }
+  }
+
+  deposit(value) {
+    if (value > 0) {
+      this.#balance += value
+      console.log(`${value} deposited!`);
+    }
+  }
+
+  balance() {
+    console.log(`your balance : ${this.#balance}`)
+  }
+
+}
+
+
+
+let dhinesh = new NewBank(5000)
+
+console.log("New Account is created")
+
+dhinesh.balance = 10000
+
+dhinesh.withdraw(2000)
+
+console.log("your current balance" + " " +dhinesh.balance);
+ 
+dhinesh.deposit(4000)
+
+console.log("your current balance" + " "+ dhinesh.balance);
+
+
+
+ 
