@@ -1,0 +1,66 @@
+----- Function --------
+
+1. Function
+function login(){
+    console.log("You successfully loggedIn")
+}
+
+
+
+2. Function Parameters & Arguments
+
+//Parameters
+//Arguments
+function login(name){
+    console.log(name + " successfully loggedIn")
+}
+
+login('Dhines')
+
+3. Return Values
+
+let login = (userName,password = "123") => {
+    if(userName === "123" && password == "123"){
+        return "Valid credentials"
+    }
+}
+
+console.log(login("123"))
+
+4. Function Expression & Arrow Function
+
+function login1(){
+    return "Traditional Function Welcome"
+}
+
+//Expression
+let login2 = function(){
+    return "Expression Function Welcome"
+}
+
+
+//Arrow Function
+let login3 = () => {
+    return "Arrow Function Welcome"
+}
+
+
+console.log(login3())
+
+5. Default Parameters 
+
+//5. Default Parameters 
+
+let login = (userName,password = "123") => {
+    if(userName === "123" && password == "123"){
+        return "Valid credentials"
+    }
+    else{
+        return "invalid credentials"
+    }
+}
+
+
+console.log(login("123"));
+
+
